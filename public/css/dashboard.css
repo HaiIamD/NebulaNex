@@ -1,0 +1,247 @@
+body {
+  background-color: #000000;
+}
+.btn1:hover {
+  background-color: black;
+  color: white;
+  border: solid 2px white;
+}
+.navbar-brand {
+  font-family: 'Silkscreen', sans-serif;
+}
+.ngaturnama {
+  font-family: 'Epilogue', sans-serif;
+  text-decoration: none;
+  font-size: 18px;
+}
+.img-max-width {
+  max-width: 100%; /* You can adjust the percentage as needed */
+  border-radius: 0 60px 40px 0px;
+}
+.custom-paragraph1 {
+  font-size: 40px; /* Adjust the font size as needed */
+  color: #ffffff; /* Adjust the text color as needed */
+  font-family: 'Epilogue', sans-serif;
+}
+.custom-paragraph1::first-letter {
+  color: #ffffff;
+  font-size: 60px;
+}
+.custom-paragraph2 {
+  font-size: 20px; /* Adjust the font size as needed */
+  color: #ffffff; /* Adjust the text color as needed */
+
+  font-family: 'Epilogue', sans-serif;
+}
+.custom-paragraph3 {
+  font-size: 40px; /* Adjust the font size as needed */
+  color: #ffffff; /* Adjust the text color as needed */
+
+  font-family: 'Epilogue', sans-serif;
+}
+.backgroundbook {
+  background-image: linear-gradient(to top, #ff8205 0%, #e92727 100%);
+}
+.iniadventanges {
+  font-family: 'Epilogue', sans-serif;
+}
+.text {
+  color: #000000;
+  font-family: 'Epilogue', sans-serif;
+  background-color: white;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+.text:hover {
+  background-color: black;
+  color: white;
+}
+.card-img-top {
+  width: 200px;
+  height: 200px;
+}
+.backgroundcard {
+  background-image: linear-gradient(to top, #e92727 0%, #ff8205 100%);
+  scroll-behavior: smooth;
+}
+.backgroundcard::-webkit-scrollbar {
+  height: 15px;
+}
+
+.backgroundcard::-webkit-scrollbar-thumb {
+  background-color: #fffcfc; /* Color of the thumb */
+  border-radius: 10px; /* Radius of the thumb corners */
+}
+
+.backgroundcard::-webkit-scrollbar-track {
+  background-color: #000000; /* Color of the track */
+}
+.judul {
+  font-family: 'Silkscreen', sans-serif;
+  color: white;
+  margin-top: 15px;
+  font-size: 25px;
+}
+.judul::first-letter {
+  font-size: 30px;
+  color: #000000;
+}
+.paragrafh {
+  color: white;
+  padding: 50px;
+  padding-top: 20px;
+  font-size: 15px;
+  text-align: justify;
+}
+.card-text {
+  text-align: center;
+  font-size: 15px;
+}
+
+.e404 {
+  padding: 300px;
+  font-size: 40px;
+}
+.tahun {
+  font-size: 13px;
+}
+.textsamping {
+  height: 400px;
+}
+.meteor {
+  height: 500px;
+  z-index: -1; /* Bring the foreground image to the front */
+  margin-top: -150px;
+}
+.fontsearch {
+  font-family: 'Epilogue', sans-serif;
+  font-size: 16px;
+}
+.mars {
+  position: absolute;
+  z-index: -1; /* Bring the foreground image to the front */
+  height: 450px;
+}
+.breadcrumb-item::before {
+  color: #fffcfc !important;
+}
+
+@media only screen and (max-width: 1024px) {
+  body {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 28%, rgb(0, 0, 0) 49%, rgb(0, 0, 0) 72%, rgb(0, 0, 0) 100%);
+  }
+  .meteor {
+    height: 0px;
+  }
+}
+
+/* responsive text */
+@media only screen and (max-width: 1024px) {
+  .custom-paragraph1 {
+    font-size: 30px; /* Adjust the font size as needed */
+  }
+  .custom-paragraph2 {
+    font-size: 15px; /* Adjust the font size as needed */
+  }
+  .custom-paragraph3 {
+    font-size: 30px; /* Adjust the font size as needed */
+  }
+  .judul {
+    font-size: 20px;
+  }
+  .text {
+    font-size: 10px;
+  }
+  .paragrafh {
+    font-size: 13px;
+  }
+  .card-text {
+    font-size: 13px;
+  }
+  .e404 {
+    padding: 250px;
+    font-size: 30px;
+  }
+  .textsamping {
+    height: 250px;
+  }
+  .gambar {
+    height: 30px;
+  }
+  .meteor {
+    height: 0px;
+  }
+}
+
+@media only screen and (max-width: 766px) {
+  .img-max-width {
+    border-radius: 40px 40px 40px 40px;
+  }
+  .custom-paragraph1 {
+    padding-top: 30px;
+    font-size: 30px; /* Adjust the font size as needed */
+    text-align: center;
+  }
+  .custom-paragraph2 {
+    font-size: 15px; /* Adjust the font size as needed */
+    text-align: center;
+  }
+  .custom-paragraph3 {
+    font-size: 30px; /* Adjust the font size as needed */
+    text-align: center;
+  }
+  .text {
+    font-size: 10px;
+  }
+  .paragrafh {
+    font-size: 10px;
+    padding: 10px;
+  }
+  .card-text {
+    font-size: 10px;
+  }
+  .e404 {
+    padding: 250px;
+    font-size: 25px;
+  }
+  .iniadventanges {
+    border-top: 2px solid rgb(255, 255, 255);
+    padding-top: 30px;
+  }
+  .textsamping {
+    height: 200px;
+  }
+  .gambar {
+    height: 30px;
+  }
+  .judul {
+    font-size: 17px;
+  }
+  .fontsearch {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 574px) {
+  .textsamping {
+    height: 180px;
+    z-index: -1; /* Bring the foreground image to the front */
+  }
+  .gambar {
+    height: 20px;
+    z-index: 1; /* Bring the foreground image to the front */
+  }
+  .ngatur-card {
+    max-width: 300px;
+    min-width: 300px;
+  }
+  .fontsearch {
+    font-size: 10px;
+  }
+  .mars {
+    position: absolute;
+    z-index: -1; /* Bring the foreground image to the front */
+    height: 300px;
+  }
+}

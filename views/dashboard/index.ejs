@@ -1,0 +1,103 @@
+<div class="container-fluid container-fluid-custom pb-1 mb-5 pt-5" >
+  <div class="row mb-4">
+    <div class="col">
+      <% if (notes.length > 0) { %> 
+      <img src="img/mars1.png" alt="" class="mars">
+      <% } else { %>
+        <h2></h2>
+        <% } %>
+
+     
+    </div>
+    <div class="col text-center">
+      <a href="/dashboard/add" class="btn btn-warning pb-1"> + Notee.. </a>
+      
+    </div>
+  </div>
+</div>
+
+
+<!--  Card From database -->
+<div class="container d-flex flex-wrap justify-content-center" style="min-height: 400px;">
+  <% if (notes.length > 0) { %> <% for (let i = 0; i < notes.length; i++) { %>
+    <div class="col-sm-4 mb-2">
+      <div class="card border-black m-2 ngatur-card" style="min-height: 150px;">
+      <a href="/dashboard/item/<%= notes[i]._id %>" class="card-body text-decoration-none">
+        <h5 class="card-title border-bottom text-center pb-3"> <%= notes[i].title  %></h5>
+        <p class="card-text pt-2 "> <%= notes[i].body %></p>
+      </a>
+    </div>
+  </div>
+  
+
+  <% } %> <% }else { %>
+  <div class="row pt-5">
+    <div class="col-5">
+      <img src="img/dashboard.png" class="img-fluid" alt="" />
+    </div>
+    <div class="col mt-md-4">
+      <h2 class="text-light">Okey...</h2>
+      <h4 class="text-light">
+        Let's Start With your first note !! <br />
+        <br />
+        <a href="/dashboard/add">Create One...</a>
+      </h4>
+    </div>
+  </div>
+  <% } %>
+</div>
+
+
+<% if (notes.length > 0) { %>
+  <div class="container d-flex flex-wrap justify-content-center mt-5">
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+      <% if (current == 1 ) { %>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">Back</a>
+            <span aria-hidden="true">&laquo;</span>
+        
+        </li>
+      <% }else { %>
+        <li class="page-item">
+          <a class="page-link" href="/dashboard" > First</a>
+          </a>
+        </li>
+        <% } %>
+
+
+        <% var i = (Number(current)> 5 ? Number(current) -4 : 1) %>
+        <% if (i !== 1) { %>
+          <li class="page-item"><a class="page-link text-black" href="#">....</a></li>
+        <% } %>
+
+
+        <% for(; i <= (Number(current) +4) && i <= pages;i++) {%>
+        <% if (i == current) { %>
+          <li class="page-item"><a class="page-link text-black" href="#"><%= i  %></a></li>
+        <% } else { %>
+          <li class="page-item"><a class="page-link text-black" href="/dashboard/?page=<%=i %>"><%= i  %></a></li>
+          <% } %>
+        <% if (i == Number(current) + 4 && i < pages) { %>
+            <li class="page-item"><a class="page-link text-black" href="#">...</a></li>
+        <% } %>
+        <% } %>
+
+        <% if (current == pages) { %>
+          <li class="page-item"><a class="page-link" href="#" aria-label="Next">Last</a></li>
+        <% }else{ %>
+        
+          <li class="page-item"><a class="page-link" href="/dashboard/?page=<%= pages %>" aria-label="Next">Next</a></li>
+          <% } %>
+
+
+      </ul>
+    </nav>
+  </div>
+  <% } %>
+
+
+
+
+
+

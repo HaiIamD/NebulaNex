@@ -1,0 +1,16 @@
+<div class="container d-flex flex-wrap justify-content-center pb-1 mb-5 pt-5">
+  <% if (searchResult !='') { %> <% searchResult.forEach(function(note,index) { %>
+  <div class="col-3">
+    <div class="container">
+      <a href="/dashboard/item/<%=note._id %>" class="text-decoration-none">
+        <div class="card text-bg-light mb-3" style="max-width: 18rem">
+          <div class="card-header"><p class="text-center fontsearch"><%=note.title %></p></div>
+        </div>
+      </a>
+    </div>
+  </div>
+    <% }); %> <% }else { %>
+    <p class="text-light">No items founds</p>
+    <% } %>
+  </div>
+</div>

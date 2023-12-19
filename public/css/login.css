@@ -1,0 +1,59 @@
+body {
+  background-color: black;
+}
+.navbar-brand {
+  font-family: 'Silkscreen', sans-serif;
+}
+.img-max-width-login {
+  max-width: 100%; /* You can adjust the percentage as needed */
+  border-radius: 40px 40px 40px 40px;
+}
+.img-max-width-register {
+  max-width: 80%; /* You can adjust the percentage as needed */
+  border-radius: 40px 40px 40px 40px;
+}
+.login {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 50px;
+  border: 2px solid white;
+  border-radius: 20px;
+  color: white;
+  background-color: transparent;
+}
+.register {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border-radius: 20px;
+  padding: 50px;
+  border: 2px solid white;
+  color: white;
+}
+
+.loginregister {
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: 'Silkscreen', sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+.custom {
+  font-size: 14px; /* Adjust the font size as needed */
+  border: 2px solid white;
+  color: white;
+  text-align: center;
+}
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+
+@media only screen and (max-width: 762px) {
+  .ngatur {
+    margin-right: 100px;
+  }
+  .ngaturmargin {
+    margin-top: 30px;
+  }
+}
