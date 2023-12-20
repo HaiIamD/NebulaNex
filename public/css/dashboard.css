@@ -122,18 +122,14 @@ body {
   z-index: -1; /* Bring the foreground image to the front */
   height: 450px;
 }
+
 .breadcrumb-item::before {
   color: #fffcfc !important;
 }
-
-@media only screen and (max-width: 1024px) {
-  body {
-    background: rgb(0, 0, 0);
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 28%, rgb(0, 0, 0) 49%, rgb(0, 0, 0) 72%, rgb(0, 0, 0) 100%);
-  }
-  .meteor {
-    height: 0px;
-  }
+.ngaturfonttanggal {
+  font-size: 11px;
+  text-align: end;
+  padding-top: 10px;
 }
 
 /* responsive text */
@@ -171,6 +167,10 @@ body {
   }
   .meteor {
     height: 0px;
+  }
+  .ngaturfonttanggal {
+    font-size: 10px;
+    text-align: end;
   }
 }
 
@@ -243,5 +243,9 @@ body {
     position: absolute;
     z-index: -1; /* Bring the foreground image to the front */
     height: 300px;
+  }
+  body {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(174deg, rgba(0, 0, 0, 1) 43%, rgba(191, 97, 9, 1) 100%);
   }
 }

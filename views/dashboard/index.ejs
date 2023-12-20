@@ -3,6 +3,7 @@
     <div class="col">
       <% if (notes.length > 0) { %> 
       <img src="img/mars1.png" alt="" class="mars">
+
       <% } else { %>
         <h2></h2>
         <% } %>
@@ -19,18 +20,20 @@
 
 <!--  Card From database -->
 <div class="container d-flex flex-wrap justify-content-center" style="min-height: 400px;">
-  <% if (notes.length > 0) { %> <% for (let i = 0; i < notes.length; i++) { %>
+  <% if (notes.length > 0) { %>
+     <% notes.forEach((notes)=> { %>
     <div class="col-sm-4 mb-2">
       <div class="card border-black m-2 ngatur-card" style="min-height: 150px;">
-      <a href="/dashboard/item/<%= notes[i]._id %>" class="card-body text-decoration-none">
-        <h5 class="card-title border-bottom text-center pb-3"> <%= notes[i].title  %></h5>
-        <p class="card-text pt-2 "> <%= notes[i].body %></p>
+      <a href="/dashboard/item/<%= notes._id %>" class="card-body text-decoration-none">
+        <h5 class="card-title border-bottom text-center pb-3"> <%= notes.title  %></h5>
+        <p class="card-text pt-2 "> <%= notes.body %></p>
+        <p class="text-secondary ngaturfonttanggal">Last Updated : <%= notes.updatedAt  %></p>
       </a>
     </div>
   </div>
   
 
-  <% } %> <% }else { %>
+  <% }) %> <% }else { %>
   <div class="row pt-5">
     <div class="col-5">
       <img src="img/dashboard.png" class="img-fluid" alt="" />

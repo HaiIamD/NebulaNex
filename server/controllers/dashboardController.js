@@ -23,6 +23,13 @@ exports.dashboard = async (req, res) => {
         $project: {
           title: { $substr: ['$title', 0, 30] },
           body: { $substr: ['$body', 0, 100] },
+          updatedAt: {
+            $dateToString: {
+              format: '%H:%M:%S | %d-%m-%Y',
+              date: '$updatedAt',
+              timezone: 'Asia/Jakarta', // Adjust the timezone as needed
+            },
+          },
         },
       },
     ])
@@ -52,6 +59,7 @@ exports.dashboardViewNote = async (req, res) => {
 
   if (note) {
     res.render('dashboard/view-note', {
+      userName: req.user.firstName,
       NoteID: req.params.id,
       note,
       layout: '../views/layouts/view-layout',
@@ -109,8 +117,10 @@ exports.dashboardSearch = async (req, res) => {
 exports.dashboardSearchSubmit = async (req, res) => {
   try {
     let searchTerm = req.body.searchTerm;
+    // Menghapus special character yang ada dalam input search
     const searchNoSpecialChars = searchTerm.replace(/[^a-zA-Z0-9]/g, '');
 
+    // Mencari sensitiv data yang ada di body dan tittle
     const searchResult = await Note.find({
       $or: [{ title: { $regex: new RegExp(searchNoSpecialChars, 'i') } }, { body: { $regex: new RegExp(searchNoSpecialChars, 'i') } }],
     }).where({ user: req.user.id });

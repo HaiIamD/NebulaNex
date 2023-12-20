@@ -10,7 +10,7 @@ const passport = require('passport');
 const MongoStore = require('connect-mongo');
 
 const app = express();
-const port = 5000 || process.env.PORT;
+const port = process.env.PORT || 5000;
 
 // Mengatur dan membuat session
 app.use(
@@ -30,7 +30,6 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // Connect database
-connectDB();
 
 // Membantu kita untuk pass data form dari page ke page maupun ke database
 app.use(express.urlencoded({ extended: true }));
@@ -62,6 +61,8 @@ app.get('*', function (req, res) {
 });
 
 // Listening port running express
-app.listen(port, () => {
-  console.log(`App listening on port ${port} `);
+connectDB().then(() => {
+  app.listen(port, () => {
+    console.log(`App listening on port ${port} `);
+  });
 });
