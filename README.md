@@ -39,7 +39,10 @@ Getting Started
 Demo of website : 
 
 
-https://github.com/HaiIamD/NebulaNex/assets/95232841/6b97999c-261b-4130-9491-fc00cc792a1e
+
+
+https://github.com/HaiIamD/NebulaNex/assets/95232841/ede4cab1-c048-4706-9d57-056920499520
+
 
 
 Usage
@@ -48,6 +51,7 @@ Read: Immerse yourself in your thoughts with a user-friendly reading experience.
 Update: Easily edit and refine your notes as your ideas evolve.
 Delete: Remove the clutter and make way for fresh ideas with the delete function.
 Contributing
+
 We welcome contributions from the Nebulanex community! Whether it's bug fixes, new features, or improvements, your input is valuable. 
 
 Support and Feedback
