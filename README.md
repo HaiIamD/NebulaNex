@@ -11,9 +11,9 @@
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-<a href="https://linkedin.com/in/dimas toriq sibarani" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="dimas toriq sibarani" height="30" width="40" /></a>
-<a href="https://fb.com/dimas thoriq" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="dimas thoriq" height="30" width="40" /></a>
-<a href="https://instagram.com/dimmtoriq" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="dimmtoriq" height="30" width="40" /></a>
+<a href="https://www.linkedin.com/in/dimas-toriq-sibarani-5277751bb/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="dimas toriq sibarani" height="30" width="40" /></a>
+<a href="https://www.facebook.com/dimasthoriq.thoriq/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="dimas thoriq" height="30" width="40" /></a>
+<a href="https://www.instagram.com/dimmts_/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="dimmtoriq" height="30" width="40" /></a>
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
@@ -25,8 +25,8 @@
 
 
 
-Nebulanex: Unleash Creativity, Organize Thoughts Seamlessly
-Welcome to Nebulanex, where simplicity meets power in the realm of note-taking! Elevate your creativity effortlessly with our intuitive CRUD (Create, Read, Update, Delete) functions. Designed with you in mind, Nebulanex is not just a note-taking app; it's your digital companion for achieving a clutter-free mind.
+<h1 align="center">Nebulanex: Unleash Creativity, Organize Thoughts Seamlessly</h1>
+<p>Welcome to Nebulanex, where simplicity meets power in the realm of note-taking! Elevate your creativity effortlessly with our intuitive CRUD (Create, Read, Update, Delete) functions. Designed with you in mind, Nebulanex is not just a note-taking app; it's your digital companion for achieving a clutter-free mind.</p>
 
 Features
 1. Effortless Creativity Unleashed
